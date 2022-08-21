@@ -6,16 +6,10 @@ import matplotlib.pyplot as plt
 # Reading image from folder where it is stored
 img_input = cv2.imread('zira.jpg', cv2.IMREAD_UNCHANGED)
   
-# denoising of image saving it into dst image
+# Denoising of image saving it into dst image
 dst = cv2.fastNlMeansDenoisingColored(img_input, None, 10, 10, 7, 15)
-  
-# Plotting of source and destination image
-# plt.subplot(121), plt.imshow(img_input)
-# plt.subplot(122), plt.imshow(dst)
-  
-# plt.show()
 
-# display the images
+# Display the images
 cv2.imwrite('After.jpg',dst)
 
 cv2.imshow('Before', img_input)
