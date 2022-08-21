@@ -6,7 +6,7 @@
 <p align="center">An image processing using <code>OpenCV</p>
 <p align="center"><img src="./data/images/result.gif"/></p>
 
-##Objective
+## Objective 
 By the end of the challenge, your machine learning model should:
 1. Be able to improve the image quality
 
