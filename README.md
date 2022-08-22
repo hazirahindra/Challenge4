@@ -4,8 +4,8 @@
 <p align="center">🎥 📸 🎬 📹</p>
 </h1>
 <p align="center">An image processing using <code>OpenCV</p>
-
-## Objective 
+ 
+ ## Objective 
 By the end of the challenge, your machine learning model should:
 1. Be able to improve the image quality
 
@@ -14,6 +14,4 @@ This project are based on four (4) types of bad images which are:
 1. overexposed
 2. underexposed
 3. grainy 
-4. blurry 
-
- 
+4. blurry
