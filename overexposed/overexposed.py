@@ -1,15 +1,18 @@
+# Importing the libraries
 import cv2 as cv
-import matplotlib.pyplot as plt
 
+# Reading the image from the disk using cv2.imread() function
 img_input = cv.imread('thumbprint.jpg', cv.IMREAD_UNCHANGED)
 
-img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+# Change the colour of the image 
+img = cv.cvtColor(img_input, cv.COLOR_BGR2GRAY)
 
+# Histogram equalization 
 dst = cv.equalizeHist(img)
 
+# display both picture before and after 
 cv.imwrite('After.jpg', dst)
 
-# display the images
 cv.imshow('Before', img_input)
 cv.imshow('After', dst)
 
